@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mare Nostrum · El Mediterráneo romano</title>
+<style>
+:root{--bg:#ece8de;--sea:#c3cfd3;--land:#ddd3bd;--ink:#1d1b17;--card:#f6f3ea;--acc:#8c2f23;--ok:#2a7a4b;--bd:#b9ae94;--on:#fff;--emp:#8c2f23}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12110e;--sea:#0e1a21;--land:#2d2a22;--ink:#e9e3d3;--card:#1b1915;--acc:#c9a24a;--ok:#5fc48a;--bd:#3c372b;--on:#12110e;--emp:#b3412f}}
+:root[data-theme="dark"]{--bg:#12110e;--sea:#0e1a21;--land:#2d2a22;--ink:#e9e3d3;--card:#1b1915;--acc:#c9a24a;--ok:#5fc48a;--bd:#3c372b;--on:#12110e;--emp:#b3412f}
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1000px;margin:0 auto;padding:12px}
+h1{font:1.1rem Georgia,serif;letter-spacing:.14em;text-transform:uppercase;margin:4px 0 8px}
+.bar{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+button{font:inherit;border:2px solid var(--bd);background:var(--card);color:var(--ink);border-radius:6px;padding:6px 14px;cursor:pointer}
+button.on{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.sp{flex:1}#xp{display:flex;align-items:center;gap:10px;margin:0 0 8px;font-size:.9rem}#xp i{flex:1;max-width:260px;height:10px;background:var(--card);border:1px solid var(--bd);border-radius:6px;overflow:hidden}#xp .f{display:block;height:100%;background:var(--acc)}
+svg{width:100%;height:auto;display:block;border:2px solid var(--bd);border-radius:6px;background:var(--sea);touch-action:manipulation}
+#m.p,#m.r{cursor:crosshair}.emp{display:none;fill:var(--emp);opacity:.3;stroke:none}svg.x.e .emp{display:block}
+.land{fill:var(--land);stroke:var(--bd);stroke-width:.8}
+text{font:9px Georgia,serif;fill:var(--ink);paint-order:stroke;stroke:var(--sea);stroke-width:2.5px;pointer-events:none}
+text.s{font-style:italic;opacity:.8}
+circle.d{fill:var(--acc);stroke:#fff;stroke-width:1.5;cursor:pointer}
+#pn{background:var(--card);border:2px solid var(--bd);border-radius:6px;padding:12px 16px;margin-top:10px}
+#pn h2{margin:0 0 4px;font:1.2rem Georgia,serif}
+#pn p{margin:4px 0}
+.ok{color:var(--ok);font-weight:bold}.no{color:#d4533f;font-weight:bold}
+.pr{opacity:.7;font-size:.9rem}.sub{margin:-4px 0 10px;letter-spacing:.1em;text-transform:uppercase;font-size:.8rem}
+</style></head><body><main>
+<h1>Mare Nostrum · El Mediterráneo romano</h1><div class="pr sub">Colegio Padre Hurtado</div>
+<div id="xp"></div><div class="bar"><button id="bx">1 · Explorar</button><button id="bp">2 · Jugar</button><button id="br">3 · Rutas</button><span class="sp"></span>
+<span id="ch"></span></div>
+<svg id="m" viewBox="0 0 691 336"><path class="land" d="M445 215l5-1l1 1l-2 1l2 1l2 1l4-1l10 2l3-1l1 4l7-3l-1 4l-1 1l-18 1l-1-2l-3-2l-11-1l-1-5l2 1l1-2zM441 162l9 4l2 6l4 2l-1 2l-4-2l-2-4l-5-1l-1-2l-5-4l-4-1l5-3zM575 219l0 2l2 3l-5 0l-3 4l-5 1l-1 2l-1-2l-6-1l-2-3l0-2l1 0l4-2l3 0l0-3l9 0l12-5zM181 147l3 1l1 1l-3 5l-2 1l-3-1l-2-3l-2 1l-2-1l5-5l5-2zM265 131l1 5l-2 4l1 4l-2 13l-6-1l-1 5l-4 0l-3-4l-1-5l2-5l-2-2l1-6l-3-5l0-5l5 1l8-6l5 4l-1 1zM262 96l1 14l-5 12l-4-3l1-2l-3-1l1-3l-2 0l1-3l-1-1l1-2l-2-1l4-4l4-2l2 1l1-5zM341 172l-5 7l-2 6l3 6l-3 4l0 2l-8-2l-3-4l-6-1l-11-7l-3-1l-3-3l1-4l3-2l2 2l3-2l2 0l6 3l9-1l4-2l4 1l6-3zM354 96l6 1l1 0l-5 1zM361 94l-7 0l-4-1zM354 92l-3-1l0-1l6 1zM115-3l-3 0l0-1l3 0zM496 209l0-4l2-3l4-1l-2 6zM488 217l-1-3l2-3l-1 3l1 2zM485 196l4-2l2 0l-3 2zM467 193l-2-2l3-2l0 2zM483 179l4 2l-3 1l-3-2zM473 184l2-2l3-1l-2 2zM455 196l0 1l-3 1l1-2zM460 181l-3-3l0-1l1-1l2 2zM474 173l-2-1l1-2l-1-3l2-1l2 1l0 4zM478 154l3 5l-1 0l1 1l-1 0l-5-1l2-2l-2 1l-3-1l4-3zM455 163l-1-1l0-2l3 3zM467 143l-2 4l-1-1l-1 1l-1-1l0-2l2 1zM456 135l-1-2l1-2l1 0l1 3zM281 245l-3-1l0-2l3 0l1 1zM125 51l-2-2l0-2l3 3zM274 98l0 3l-4-2zM196 147l-6-2l0-2l5 0l1 3zM159 162l-3 0l1-2l1-1l3-1l1 1zM327 211l-2-1l-1-2l3 2zM329 65l-3-3l1-2l3 4zM335 75l-3-3l-3-3l7 5zM326 70l-2-4l0-5l2 3zM405 172l2 2l0 1l-3-1l-1-2l-2 1l3-5zM410 181l-3 0l-2-3l1-1zM406 166l-2 1l0-2l2-3zM398 154l-3-1l-3-5l3-1l1 1l-1 1zM436 206l-2-2l1-2l1 2zM601 352l-10-17l-6-1l-1 1l4-24l-3 5l-4 20l-2 4l-6-5l-7-8l-1-7l-5-8l-2-8l-2 1l-1 5l3 5l1 6l7 12l4 5l0 4l5 10l-588 0l0-18l7-4l5-5l8-6l8-12l2-5l1-4l-4-5l1-12l2-4l4-6l1-8l10-11l20-12l7-12l6-17l7-2l1 1l-1 2l2 2l5 5l3 2l3 0l9-1l3 1l3-1l3-3l1 5l12 0l8-4l5-5l6-3l5 1l5-6l12-5l17-2l5-3l7 0l3-1l13 0l7 4l9-4l6-3l1 1l4 1l4 0l0-2l3 0l6 3l12-2l4-3l7-2l2 0l0 3l0-2l4 1l0 2l2 3l0 1l1 1l7-5l1 0l1 3l-8 10l1 6l6 4l1 6l-5 9l-8 8l-1 2l4 5l2 1l3 0l0 3l2-1l1-1l4 5l-1 1l8 3l6 3l6 1l7-2l11 4l5 3l8 2l2 3l2 8l3 4l5 3l9 1l13 4l5 3l9 7l5 0l4-2l5-6l2-6l-3-10l2-7l7-5l5-3l5-1l4-2l6 0l11 5l1 5l2 2l6 0l5 3l9 0l2 2l3 5l8-1l11 2l7 2l3 3l4 0l2 1l7 1l7 4l4-2l7-5l4 0l2-3l7-2l-5 2l6 0l1-3l5 3l5-2l3 4l-3-3l-2 3l4 1l1 3l2-2l-1-2l5 4l7-2l1 2l9-2l6-5l4-6l5-19l7-16l0-3l4-5l-1-6l0-8l-1-2l2-7l-2-5l5-6l0-2l-2-2l-6 5l-2 1l-9-4l-13 10l-11 2l-6-2l-4-6l-10-4l-8-1l-2 10l-3-1l-7 2l-6-2l-3-6l-2 0l-7-2l-2 3l-2 0l1-2l-7 1l-1-1l7-1l3-3l-12 0l0-2l3-1l0-1l-4-2l-2-5l2-1l0-4l-12-4l2-2l-1-4l1 0l2 1l1 4l1-2l2 1l3-1l-3-1l-2-3l4-3l-3-1l1-3l-3-3l3-4l-10 2l1-9l2 0l5-6l7-1l2 2l4 0l1-1l-1-2l2 0l1 0l0 2l13 0l1-1l-4-2l2-1l12-2l-6-1l-4-2l0-1l1-4l10 2l5-1l6 2l6-1l2-3l11-7l14-4l18 1l3-2l2 1l-1 2l3 2l3 2l5-1l1 0l2 4l3 3l5-2l3 3l17 4l13-3l5 2l6 1l15-8l4-4l0-5l-4-12l-20-12l-15-13l-6-2l-5-4l-4 0l-4-5l-7-2l4-3l-3-1l2-1l4 3l6-2l-1-3l4-7l1-1l1 2l2-3l4 1l-6-5l-2-1l-2-3l3 0l3-1l4 0l-1-2l10-4l0-3l-7 2l-2 0l3-2l-2 0l-6 3l-8 0l-2 2l-4 1l-3 3l-3-1l-4 1l-6 1l-5 4l-3 3l-2 1l3-2l0-3l-2 3l-3 1l0 3l2 5l6 6l4-1l3 0l2-1l5 1l-2 5l-7 1l-3-2l-2 0l-5 5l-5 0l-3 1l-2 3l-5 3l-6-3l2-6l-1-3l-8-4l-4 1l-1-1l15-9l-1-3l-2 1l-3-2l-9 2l-9-4l2-1l1-1l-6-2l10 1l3-2l-3 1l-4-1l-1-6l-3-3l2 4l0 5l-5-1l1-1l-2 2l-8 1l-2 5l-5 6l-8 2l0 2l1 5l-2 8l-6 1l0-4l-2 1l-1 6l1 0l-4 4l-1 13l-1 2l-4 0l-3 3l0 7l-5 5l2 1l4 5l0 3l3 5l11 5l-2 4l-2 0l-8-1l-3 1l-5 0l-3 5l-7 3l-7 7l1-4l7-5l-9 0l-1-2l-2-2l-10-2l-4 2l-4-1l-5 3l-4 0l1 5l5 2l1 3l-5-4l-2 1l3 3l-1 3l-3-5l-3 0l0 2l3 3l-4-1l-1-3l-5-3l-1-2l1-1l-4 1l0 7l9 14l-2 1l0-2l-3-1l-1 1l1 1l1 3l1-1l-6 3l8 3l6 5l4 2l0 2l0 7l-6-6l-6 3l2 4l2 1l1 2l-4 2l-2-3l-3-1l4 11l0 4l1 3l-5-6l-2 1l-1 5l-1-1l-1-3l-4-5l-1 0l-1 4l-4-5l1-5l-7-8l4-5l3 0l2-2l14 6l0-2l3 0l0-2l-4-1l-5-3l-2 1l-4-1l-6 2l-2-3l-1 2l-1 0l-5-8l1-1l3 1l0-2l-4 0l-6-5l-6-12l-6-4l-1-2l2 1l-2-5l2-4l0-8l1-6l-5-2l-3-5l-4-2l0-1l-1 0l-9-6l-10-3l2 0l7 2l-11-8l-6-3l-6 1l0-3l-10-8l-1-1l5 0l-6-6l-2-1l0-6l-4-4l-3 0l-4 8l-2 0l-3-5l-1-6l3-2l-2-2l-2 1l-3-1l-2 2l-10 3l-1 3l4 5l-2 2l-1 0l0 1l1 8l4 4l11 7l6 14l7 7l8 5l13 1l0 2l-4 2l0 2l16 7l11 7l6 6l0 2l-1 5l-4-2l-3-5l-6-1l-2-3l-4 1l-3 5l-2 6l1 2l3 1l4 3l1 6l-1 1l-2 0l-5 2l0 6l-4 3l-3 5l-4 0l-1-2l0-2l2-2l1-3l0-2l1-1l3-1l0-3l-1-1l-5-16l-5-1l-5-3l0-4l-2-3l-6 1l2-2l-2-1l-3 0l-4-7l-7-1l-2 1l-6-4l-10-9l-2-4l-5-2l-2 1l1-3l-6-6l-3 0l0-4l-2-5l-2-7l-11-6l-7-2l-3 1l-7 8l-9 3l-7 5l-2 3l-6 2l-9-3l-1-2l-3 0l0-1l-5 1l-6-2l-2-1l-10 6l-3 6l0 4l3 4l-2 1l0 1l1 4l-15 10l-13 4l-4 4l2 2l-4 1l-8 12l-3 7l2 7l4 4l-9 7l-4 9l2 2l-8 1l-4 3l-4 7l-3 3l-4-1l-4 2l-20 0l-4 3l-6 1l-3 5l-1 0l0 1l-2 1l-6-3l-2-7l-2 0l0-2l2-3l-2 2l-6-6l0-1l-1 1l-7 0l-4 3l-10-2l-5 1l2-6l0-5l-1-3l1-4l-1-4l3 0l-2-1l-5 1l-1-4l3-1l1-4l2-1l-2 1l-2 4l-3 1l-1-1l-1-1l2-8l3-4l4-9l-1-2l3-8l0-5l-2-8l1-2l-2-1l1-3l-1 0l0-3l3-2l-2-1l1-2l-1-1l0-2l-3 0l2-3l-4-3l0-3l4-2l7-1l1-1l0-2l7-3l8 3l16-1l17 3l12-1l7 2l2-1l9 2l7-2l2-2l3-16l2-2l-1-1l-1 1l2-14l3 3l2 5l2 1l-3-7l-6-4l0-1l3 0l-2-9l-8-3l-4-6l1-3l-2-2l0-1l2 0l3 1l-2-2l-7 0l-1-1l2-2l-5 0l0-2l-2 0l-12-3l-5 0l-2-3l-3-1l4-2l-3-2l5 0l-2-1l-5 0l0-1l3-3l10-1l6-2l3 0l4 4l3-1l5 0l1 1l1-2l1 1l6 0l-2-3l0-6l-3-5l-1-3l6 0l2 0l1 5l13 1l7-3l-4 0l1-3l14-5l547 0l0 368z"/><path class="emp" d="M36 352l-6-5l0-6l-2 0l0 9l-7 0l-3 2l-31 0l0-18l7-4l5-5l8-6l9-14l2-7l-4-5l1-12l6-10l1-8l10-11l20-12l7-12l6-17l7-2l1 1l-1 2l3 5l7 4l3 0l9-1l3 1l3-1l3-3l1 5l12 0l8-4l5-5l6-3l5 1l5-6l12-5l17-2l5-3l7 0l3-1l13 0l7 4l9-4l6-3l5 2l4 0l0-2l3 0l6 3l12-2l4-3l7-2l2 0l0 3l0-2l4 1l2 6l1 1l7-5l1 0l1 3l-8 10l1 6l6 4l1 6l-5 9l-8 8l-1 2l4 5l2 1l3 0l0 3l2-1l1-1l4 5l-1 1l8 3l6 3l6 1l7-2l11 4l5 3l8 2l2 3l2 8l3 4l5 3l9 1l13 4l14 10l5 0l4-2l5-6l2-6l-3-10l2-7l7-5l14-6l6 0l11 5l1 5l2 2l6 0l5 3l9 0l5 7l8-1l11 2l7 2l9 4l7 1l7 4l4-2l7-5l4 0l2-3l7-2l-5 2l6 0l1-3l5 3l5-2l3 4l-3-3l-2 3l4 1l1 3l2-2l0-2l4 4l7-2l1 2l6-1l6-3l4-4l15-43l4-5l-1-14l-1-2l2-7l-2-5l5-6l0-2l-2-2l-8 6l-9-4l-13 10l-11 2l-6-2l-4-6l-10-4l-8-1l-2 10l-3-1l-7 2l-6-2l-3-6l-2 0l-7-2l-2 3l-2 0l1-2l-7 1l-1-1l7-1l3-3l-12 0l0-2l3-1l0-1l-4-2l-2-5l2-1l0-4l-12-4l2-2l0-4l2 1l1 4l1-2l2 1l3-1l-3-1l-2-3l4-3l-3-1l1-3l-3-3l3-4l-10 2l1-9l7-6l7-1l2 2l4 0l1-1l-1-2l2 0l1 0l0 2l13 0l1-1l-4-2l2-1l12-2l-6-1l-4-2l0-1l1-4l27 2l2-3l11-7l14-4l18 1l3-2l2 1l-1 2l3 2l3 2l6-1l2 4l3 3l5-2l3 3l17 4l13-3l5 2l6 1l11-5l5-4l4 1l1-1l7 1l2-2l2 0l6 6l3 1l3 5l0 3l-2 2l2 6l4 2l0 43l-4 1l-8-2l-4 0l-12 12l-6 3l-1 6l1 7l-2 5l0 9l-3 5l-28 17l4 17l2-1l1 2l-4 4l-26 8l13 16l-4 3l-2 5l-10 2l-3 6l-6 5l-14-3l0-3l-3 5l-4 20l-2 4l-6-5l-7-8l-1-7l-5-8l-2-8l-2 1l-1 5l3 5l1 6l7 12l4 5l0 4l5 10zM161 158l1 1l-3 3l-3 0l2-3zM31 190l-5 1l2-6l-1-16l3 0l-2-1l-5 1l-1-4l3-1l1-4l2-1l-2 1l-2 4l-4 0l1-9l3-4l4-9l-1-2l3-12l-2-9l1-2l-2-1l1-3l-1 0l0-3l3-2l-2-1l1-2l-1-3l-3 0l2-3l-4-3l0-3l4-2l7-1l1-1l0-2l7-3l8 3l16-1l17 3l12-1l7 2l2-1l9 2l7-2l2-2l3-16l2-2l-1-1l-1 1l2-14l3 3l2 5l2 1l-3-7l-6-4l0-1l3 0l-2-9l-8-3l-4-6l1-3l-2-2l0-1l2 0l3 1l-2-2l-7 0l1-3l-5 0l0-2l-2 0l-12-3l-5 0l-2-3l-3-1l4-2l-3-2l5 0l-7-1l0-1l3-3l16-3l3 0l4 4l3-1l5 0l1 1l1-2l1 1l6 0l-2-3l0-6l-4-8l6 0l2 0l1 5l13 1l7-3l-4 0l1-3l14-5l37 0l3 1l5-1l1 3l5 2l3 3l4-1l3 2l3-1l3 2l3 3l9 1l9 2l0 2l-4 4l-3 7l0 9l11 1l2-1l-3-1l3-1l3 1l4 0l5 3l4-1l4 3l0 2l3-2l0-3l6 1l2 2l9-3l6-1l0-1l4 1l2-1l4 3l1-2l-2-2l1-2l-3-4l8-4l1-3l3 0l2-3l3 2l8 0l1-2l2 0l1-4l10 2l3 2l7-1l4 2l1 1l-1 4l3 6l-1 3l0 2l-3 0l-3-1l-2 1l3 2l-3 3l0 6l-4 2l2 0l3 6l5 3l5 5l9 4l6 0l3-3l8-1l4-3l8 1l5 0l3-2l2 0l3-3l1-3l2-1l6-13l4-4l4 0l7-5l13 3l5-1l4 4l8-4l9-1l2-3l6-1l3 3l7 12l6 5l2 6l-2 10l1 6l-1 0l2 3l3 2l4 1l0-1l8-2l4 3l-2 7l-6 1l0-4l-2 1l-1 6l1 0l-4 4l-1 13l-1 2l-4 0l-3 3l0 7l-5 5l6 6l0 3l3 5l11 5l-2 4l-10-1l-8 1l-3 5l-7 3l-7 7l1-4l7-5l-9 0l-3-4l-10-2l-4 2l-4-1l-5 3l-4 0l1 5l5 2l1 3l-5-4l-2 1l3 3l-1 3l-3-5l-3 0l0 2l3 3l-4-1l-1-3l-5-3l0-3l-4 1l0 7l9 14l-2 1l0-2l-3-1l-1 1l1 1l1 3l1-1l-6 3l8 3l6 5l4 2l0 2l0 7l-6-6l-6 3l2 4l2 1l1 2l-4 2l-2-3l-3-1l5 18l-5-6l-2 1l-1 5l-1-1l-1-3l-4-5l-1 0l-1 4l-4-5l1-5l-7-8l4-5l3 0l2-2l14 6l0-2l3 0l0-2l-4-1l-5-3l-2 1l-4-1l-6 2l-2-3l-1 2l-1 0l-5-8l1-1l3 1l0-2l-4 0l-6-5l-6-12l-6-4l-1-2l2 1l-2-5l2-4l0-8l1-6l-5-2l-3-5l-4-2l0-1l-1 0l-9-6l-10-3l2 0l7 2l-11-8l-6-3l-6 1l0-3l-10-8l-1-1l5 0l-6-6l-2-7l-4-4l-3 0l-4 8l-2 0l-3-5l-1-6l3-2l-2-2l-2 1l-3-1l-2 2l-10 3l-1 3l4 5l-2 2l-1 0l0 1l1 8l4 4l11 7l6 14l7 7l8 5l13 1l0 2l-4 2l0 2l27 14l6 6l-1 7l-4-2l-3-5l-6-1l-2-3l-4 1l-3 5l-2 6l8 6l1 6l-8 3l0 6l-4 3l-3 5l-4 0l-1-2l0-2l3-5l0-2l4-2l0-3l-6-17l-10-4l0-4l-2-3l-6 1l2-2l-2-1l-3 0l-4-7l-9 0l-6-4l-12-13l-5-2l-2 1l1-3l-6-6l-3 0l0-4l-4-12l-11-6l-7-2l-3 1l-7 8l-8 2l-8 6l-2 3l-6 2l-9-3l-1-2l-3 0l0-1l-5 1l-6-2l-2-1l-10 6l-3 6l0 4l3 4l-2 1l0 1l1 4l-15 10l-13 4l-4 4l2 1l-4 2l-11 18l1 7l5 5l-9 7l-4 9l2 2l-8 1l-4 3l-6 10l-5-1l-4 2l-20 0l-4 3l-6 1l-3 5l-3 2l-6-3l-2-7l-2 0l0-2l2-3l-2 2l-6-6l0-1l-1 1l-7 0l-4 3zM183 152l-3 3l-3-1l-2-3l-2 1l-2-2l10-6l0 3l4 1zM195 143l1 4l-6-3l0-1zM278 242l3 0l1 1l-2 2l-2 0zM334 185l3 7l-2 2l-1 3l-4 0l-4-2l-4-5l-3 0l-10-6l-6-2l-3-3l1-4l3-2l2 2l5-2l6 3l9-1l4-2l4 1l6-3l1 1l-5 7zM265 143l-2 14l-6-1l-1 5l-4 0l-3-4l-1-5l2-5l-2-2l1-6l-3-5l0-5l5 1l8-6l3 2l2 2l-1 1l3 6l-2 5zM261 113l0 4l-3 5l-4-3l1-2l-3-1l1-3l-2 0l1-3l-1-1l1-2l-2-1l4-4l4-2l2 1l1-5l2 13zM329 69l2 1l5 4l-1 1l-2-1zM324 62l1-1l1 3l0 6zM327 60l2 3l1 1l-1 1l-3-2zM449 216l4 2l4-1l10 2l3-1l1 4l7-3l-2 5l-18 1l-1-2l-15-4l0-4l2 1l1-2l1 1l4-1zM406 177l2 2l2 2l-3 0l-2-3zM458 176l2 2l0 3l-3-3zM404 174l-1-2l-2 0l1-2l1 1l1-3l1 4l2 2l0 1zM449 165l3 7l4 2l-1 2l-4-2l-2-4l-5-1l-1-2l-5-4l-4-1l5-3l3 4zM395 147l1 1l-1 1l1 3l2 2l-3-1l-3-5zM464 146l-1 1l-1-1l0-2l2 1l3-2l-2 4zM458 133l0 1l-2 1l-1-1l1-3zM572 224l-3 4l-5 1l-1 2l-7-3l-2-5l8-2l0-3l9 0l12-5l-8 6l0 2l2 3zM489 211l0 5l-1 1l-1-3zM496 205l6-4l-2 6l-4 2zM484 182l-3-2l3-1l3 2zM472 167l4 0l0 4l-2 2l-2-1l1-2zM481 159l-1 1l-4 0l-1-1l2-2l-2 1l-3-1l0-2l6-1l3 4z"/><g id="fb"></g><g id="pts"></g></svg>
+<noscript><div id="pn"><h2>Activa JavaScript</h2><p>Este mapa es un archivo interactivo. Si lo abriste desde WhatsApp, Mail o Drive, no va a correr: ábrelo en Chrome o Safari, o mejor desde un link.</p></div></noscript>
+<div id="pn"></div>
+</main>
+<script>
+const W=-11,N=49,K=16,C=.8,X=o=>(o-W)*K*C,Y=a=>(N-a)*K;
+const T={c:['Ciudad',220],i:['Isla',260],s:['Mar',380],r:['Región',380]};
+const P=[
+['Roma','Roma',41.9,12.5,'c','Capital del Imperio. "Todos los caminos llevan a Roma": las calzadas salían de aquí.'],
+['Cartago','Carthago',36.85,10.3,'c','Gran rival de Roma. La destruyó en el 146 a. C. y después la refundó.'],
+['Alejandría','Alexandria',31.2,29.9,'c','Tenía un faro gigante y la biblioteca más famosa. De Egipto venía el trigo que alimentaba a Roma.'],
+['Atenas','Athenae',37.98,23.73,'c','Cuna de la filosofía. Roma copió muchísimo de su arte y sus dioses.'],
+['Constantinopla','Byzantium',41.0,29.0,'c','Antes se llamaba Bizancio. Constantino la hizo capital en el año 330.'],
+['Tarraco','Tarraco',41.1,1.25,'c','Hoy es Tarragona (España). Aún tiene un anfiteatro romano frente al mar.'],
+['Massalia','Massalia',43.3,5.4,'c','Hoy es Marsella (Francia). La fundaron griegos y fue aliada de Roma.'],
+['Antioquía','Antiochia',36.2,36.15,'c','Una de las ciudades más grandes del Oriente romano. Hoy está en Turquía.'],
+['Siracusa','Syracusae',37.07,15.29,'c','Allí vivió Arquímedes, el genio de los inventos. Roma la conquistó en el 212 a. C.'],
+['Pompeya','Pompeii',40.75,14.5,'c','El Vesubio la sepultó bajo ceniza en el año 79 y quedó casi intacta.'],
+['Jerusalén','Hierosolyma',31.78,35.22,'c','Capital de Judea. Los romanos destruyeron su Templo en el año 70.'],
+['Sicilia','Sicilia',37.5,14.1,'i','Primera provincia de Roma fuera de Italia. Era el granero de la República.'],
+['Cerdeña','Sardinia',40.0,9.0,'i','Roma se la quitó a Cartago, junto con Córcega, en el 238 a. C.'],
+['Creta','Creta',35.25,24.9,'i','Isla del rey Minos y del laberinto. Roma la conquistó hacia el 67 a. C.'],
+['Chipre','Cyprus',35.0,33.2,'i','Rica en cobre: la palabra "cobre" viene del latín cuprum, "de Chipre".'],
+['Mar Adriático','Mare Adriaticum',43.0,15.5,'s','Separa Italia de los Balcanes. Los piratas de Iliria lo hacían peligroso.'],
+['Mar Egeo','Mare Aegaeum',38.5,25.0,'s','Lleno de islas entre Grecia y Turquía: los barcos navegaban de isla en isla.'],
+['Mar Tirreno','Mare Tyrrhenum',39.8,12.0,'s','Al oeste de Italia. Su nombre viene de los etruscos.'],
+['Mar Jónico','Mare Ionium',37.8,18.5,'s','Entre Italia y Grecia. Las flotas lo cruzaban rumbo a Oriente.'],
+['Mar Negro','Pontus Euxinus',43.5,34.0,'s','Los romanos lo llamaban Pontus Euxinus. De allí llegaban trigo y pescado.'],
+['Hispania','Hispania',40.0,-3.5,'r','España y Portugal de hoy. Daba oro, plata, aceite y vino.'],
+['Galia','Gallia',46.5,2.5,'r','La actual Francia. Julio César la conquistó entre el 58 y el 50 a. C.'],
+['Egipto','Aegyptus',29.0,31.0,'r','Octavio lo conquistó en el 30 a. C. Lo gobernaba directamente el emperador.'],
+['Anatolia','Asia Minor',39.0,33.0,'r','Hoy es Turquía. Sus ricas ciudades pagaban muchos impuestos a Roma.'],
+['Dacia','Dacia',45.8,24.5,'r','La conquistó Trajano en el 106 (hoy Rumania). Con él el Imperio llegó a su mayor tamaño.']];
+const $=s=>document.querySelector(s),svg=$('#m'),pts=$('#pts'),fb=$('#fb'),pn=$('#pn');
+const NS='http://www.w3.org/2000/svg';
+const el=(t,a,p,x)=>{const e=document.createElementNS(NS,t);for(const k in a)e.setAttribute(k,a[k]);if(x)e.textContent=x;p.append(e);return e};
+const km=(a,b,c,d)=>{const r=Math.PI/180;return Math.round(Math.hypot((c-a)*r,(d-b)*r*Math.cos((a+c)/2*r))*6371)};
+const ls=(k,v)=>{try{return v==null?localStorage.getItem(k):localStorage.setItem(k,v)}catch(e){}};
+let xp=+(ls('xp')||0),streak=0,qt=0,hard=false,hits=0,ri=-1,si=0,miss=0,emp=true,mode='x',flt='all',q=[],cur,score=0,tot=0,lock=false;
+const sh=a=>a.map(v=>[Math.random(),v]).sort((a,b)=>a[0]-b[0]).map(v=>v[1]);
+const H={'Cartago':'ruinas junto a Túnez, en Túnez','Alejandría':'Alejandría, Egipto','Atenas':'Atenas, Grecia','Constantinopla':'Estambul, Turquía','Tarraco':'Tarragona, España','Massalia':'Marsella, Francia','Antioquía':'Antakya, Turquía','Siracusa':'Siracusa, Sicilia','Pompeya':'cerca de Nápoles, Italia'};
+const hint=n=>H[n]&&!hard?` <small class="pr">(hoy: ${H[n]})</small>`:'';
+const LV=['Recluta','Legionario','Optio','Centurión','Tribuno','Legado','Cónsul','Emperador'];
+const lv=()=>Math.min(7,Math.floor(xp/150));
+function hud(){const l=lv(),p=l==7?100:(xp%150)/1.5;$('#xp').innerHTML=`<b>Nivel ${l+1} · ${LV[l]}</b><i><span class="f" style="width:${p}%"></span></i>${xp} XP`}
+function gain(g){const o=lv();score+=g;xp+=g;ls('xp',xp);hud();return lv()>o}
+const chip=(n,on,f)=>{const b=document.createElement('button');b.textContent=n;b.className=on?'on':'';b.onclick=f;$('#ch').append(b)};
+function tabs(){['x','p','r'].forEach(m=>$('#b'+m).className=mode==m?'on':'');
+ svg.setAttribute('class',mode+(mode=='x'&&emp?' e':''));$('#ch').innerHTML='';
+ if(mode=='x')chip('Imperio (año 117)',emp,()=>{emp=!emp;tabs()});
+ if(mode=='p')[['all','Todo'],['c','Ciudades'],['is','Islas y mares'],['r','Regiones']].forEach(([v,n])=>chip(n,flt==v,()=>{flt=v;play()}));if(mode=='p')chip('Veterano (más preciso)',hard,()=>{hard=!hard;play()});
+ if(mode=='r')RT.forEach((r,i)=>chip(r.n,i==ri,()=>route(i)))}
+function explore(){mode='x';tabs();fb.innerHTML='';pts.innerHTML='';
+ P.forEach((p,i)=>{el('text',{x:X(p[3])+7,y:Y(p[2])+3,class:p[4]=='s'?'s':''},pts,p[0]);
+ const c=el('circle',{cx:X(p[3]),cy:Y(p[2]),r:p[4]=='s'||p[4]=='r'?3:4.5,class:'d'},pts);
+ if(p[4]=='s'||p[4]=='r')c.style.opacity=.55;c.onclick=()=>info(p)});
+ pn.innerHTML='<h2>Mare Nostrum</h2><p>Los romanos llamaban al Mediterráneo <b>"nuestro mar"</b>: todo el Imperio giraba a su alrededor. Toca los puntos para conocer cada lugar. La zona roja es el Imperio en su mayor tamaño (año 117), aproximado con las fronteras de hoy. Cuando te sientas listo, pasa a <b>Jugar</b>.</p>'}
+function info(p){pn.innerHTML=`<h2>${p[0]} <span class="pr">(${p[1]} · ${T[p[4]][0]})</span></h2><p>${p[5]}</p>${H[p[0]]?'<p class="pr">Hoy: '+H[p[0]]+'.</p>':''}`}
+function play(){mode='p';tabs();pts.innerHTML='';P.forEach(p=>p.r=0);hits=0;streak=0;
+ q=sh(P.filter(p=>flt=='all'||flt.includes(p[4])));tot=q.length;score=0;next()}
+function next(){if(!q.length)return end();cur=q[0];lock=false;qt=Date.now();fb.innerHTML='';
+ pn.innerHTML=`<p class="pr">${tot-q.length} de ${tot} dominados · ${score} puntos · racha ${streak}</p><h2>¿Dónde está <b>${cur[0]}</b>?${hint(cur[0])}</h2><p>${T[cur[4]][0]}. Ubícalo en el mapa.</p><button onclick="skip()">No lo conozco</button>`}
+const rk=()=>['Recluta','Legionario','Centurión','Tribuno','Cónsul'][[.4,.6,.8,.95].filter(x=>hits/tot>=x).length];
+function skip(){if(lock)return;lock=true;streak=0;cur.r=1;q.push(q.shift());const tx=X(cur[3]),ty=Y(cur[2]);
+ el('circle',{cx:tx,cy:ty,r:7,fill:'none',stroke:'#3fae6b','stroke-width':3},fb);el('text',{x:tx+10,y:ty+3},fb,cur[0]);
+ pn.innerHTML=`<p class="pr">Sin penalización: así se aprende. Volverá a salir.</p><h2>${cur[0]} <span class="pr">(${cur[1]})</span></h2><p>${cur[5]}</p>${H[cur[0]]?'<p class="pr">Hoy: '+H[cur[0]]+'.</p>':''}<button id="nx" class="on">Siguiente →</button>`;$('#nx').onclick=next}
+function end(){fb.innerHTML='';pn.innerHTML=`<h2>Mapa dominado · ${LV[lv()]}</h2><p>${hits} de ${tot} a la primera, ${score} puntos. Los que fallaste se repitieron hasta que los dominaste.</p><button onclick="play()">Jugar de nuevo</button>`}
+svg.addEventListener('click',e=>{if(lock)return;if(mode=='r')return hop(e);if(mode!='p')return;lock=true;
+ const pt=svg.createSVGPoint();pt.x=e.clientX;pt.y=e.clientY;const u=pt.matrixTransform(svg.getScreenCTM().inverse());
+ const lo=W+u.x/(K*C),la=N-u.y/K,d=km(la,lo,cur[2],cur[3]),tol=T[cur[4]][1]*(hard?.5:1),ok=d<=tol,tx=X(cur[3]),ty=Y(cur[2]);
+ el('line',{x1:u.x,y1:u.y,x2:tx,y2:ty,stroke:'#d4533f','stroke-width':1.5,'stroke-dasharray':'4 3'},fb);
+ el('circle',{cx:u.x,cy:u.y,r:4,fill:ok?'#3fae6b':'#d4533f',stroke:'#fff'},fb);
+ el('circle',{cx:tx,cy:ty,r:7,fill:'none',stroke:'#3fae6b','stroke-width':3},fb);el('text',{x:tx+10,y:ty+3},fb,cur[0]);
+ let v;if(ok){const f=!cur.r;if(f)hits++;streak=f?streak+1:0;const m=Math.min(4,1+Math.floor(streak/3))*(hard?2:1),g=f?(10+Math.max(0,5-Math.floor((Date.now()-qt)/2000)))*m:3,up=gain(g);q.shift();v=`<span class="ok">${d<tol/2?'Preciso.':'Correcto.'}</span> Estabas a ${d} km. <b>+${g} XP</b>${m>1?' · multiplicador x'+m:''}${up?' <b>Subiste a '+LV[lv()]+'.</b>':''}`}
+ else{streak=0;cur.r=1;q.push(q.shift());v=`<span class="no">${d<tol*2?'Cerca.':'Fuera de rango.'}</span> Estabas a ${d} km. Se repetirá.`}
+ pn.innerHTML=`<p>${v}</p><h2>${cur[0]} <span class="pr">(${cur[1]})</span></h2><p>${cur[5]}</p><button id="nx" class="on">Siguiente →</button>`;$('#nx').onclick=next});
+const RT=[
+{n:'Trigo de Egipto',s:['Alejandría','Creta','Siracusa','Roma'],m:'Misión: abastecer a Roma. Lleva el trigo de Egipto hasta la capital.',f:'Egipto alimentaba a gran parte de Roma. En invierno casi no se navegaba: el mar se consideraba cerrado (mare clausum).',w:[[31.2,29.9],[33.4,27],[34.7,24.9],[35.6,20.5],[36.3,16.5],[37.07,15.29],[38.3,15.7],[39.2,15],[40.4,14],[41.5,12.5],[41.9,12.5]]},
+{n:'Hacia Occidente',s:['Roma','Cartago','Tarraco','Massalia'],m:'Recorre el Mediterráneo occidental: de Roma a África, luego a Hispania y a la Galia.',f:'Con estas ciudades Roma controlaba el Mediterráneo occidental. De Hispania llegaban oro, aceite y garum, una salsa de pescado.',w:[[41.9,12.5],[41.7,12.2],[39.5,11.5],[37.3,10.6],[36.85,10.3],[37.3,10.6],[38.3,9],[38.9,5],[40.2,2.6],[40.9,1.6],[41.1,1.25],[40.8,2.2],[41.5,3.3],[42.4,3.8],[43,4.8],[43.3,5.4]]},
+{n:'Hacia Oriente',s:['Roma','Atenas','Constantinopla'],m:'Viaja al Oriente: de Roma a Atenas y de ahí hasta Constantinopla.',f:'En el año 395 el Imperio se dividió en Occidente y Oriente. Constantinopla quedó como capital del Oriente.',w:[[41.9,12.5],[41.5,12.3],[40.3,13.4],[38.4,15.6],[37.8,15.9],[37.4,16.5],[36.6,19],[36,22.5],[36,23.2],[37.1,24.3],[37.98,23.73],[37.7,24],[38,25.2],[38.9,25.8],[40,26.2],[40.3,26.4],[40.7,28],[41,29]]}];
+function route(i){mode='r';ri=i;si=0;miss=0;lock=false;tabs();pts.innerHTML='';fb.innerHTML='';ask()}
+function ask(){const r=RT[ri];pn.innerHTML=`<p class="pr">${r.m}</p><h2>Parada ${si+1} de ${r.s.length}: <b>${r.s[si]}</b>${hint(r.s[si])}</h2><p>Toca en el mapa dónde está.${si?' Ya visitaste: '+r.s.slice(0,si).join(', ')+'.':''}</p>`}
+function hop(e){const r=RT[ri],p=P.find(x=>x[0]==r.s[si]),q=svg.createSVGPoint();q.x=e.clientX;q.y=e.clientY;const u=q.matrixTransform(svg.getScreenCTM().inverse()),
+ d=km(N-u.y/K,W+u.x/(K*C),p[2],p[3]),tx=X(p[3]),ty=Y(p[2]);
+ if(d<=T[p[4]][1]){el('circle',{cx:tx,cy:ty,r:5,fill:'#3fae6b',stroke:'#fff'},fb);el('text',{x:tx+8,y:ty+3},fb,p[0]);miss=0;
+  if(++si<r.s.length)return ask();
+  lock=true;sail(r);gain(40);pn.innerHTML=`<h2>Ruta completada · +40 XP</h2><p>${r.f}</p>`;
+  const b=document.createElement('button');b.textContent='Otra ruta';b.className='on';b.onclick=()=>route((ri+1)%RT.length);pn.append(b)}
+ else{miss++;ask();let h=`<p class="no">Todavía no: estabas a ${d} km.</p>`;
+  if(miss>1){h=h.slice(0,-4)+' Pista: busca el círculo verde.</p>';el('circle',{cx:tx,cy:ty,r:14,fill:'none',stroke:'#3fae6b','stroke-width':2,'stroke-dasharray':'3 3'},fb)}
+  pn.insertAdjacentHTML('afterbegin',h)}}
+function sail(r){const pa=el('path',{d:'M'+r.w.map(p=>Math.round(X(p[1]))+' '+Math.round(Y(p[0]))).join('L'),fill:'none',stroke:'#d4533f','stroke-width':2,'stroke-dasharray':'5 4'},fb);
+ const L=pa.getTotalLength(),sp=el('circle',{r:5,fill:'#e0b84f',stroke:'#fff','stroke-width':1.5},fb),t0=performance.now();
+ (function f(t){if(!pa.isConnected)return;const k=Math.min(1,(t-t0)/6000),q=pa.getPointAtLength(k*L);sp.setAttribute('cx',q.x);sp.setAttribute('cy',q.y);if(k<1)requestAnimationFrame(f)})(t0)}
+$('#bx').onclick=explore;$('#bp').onclick=play;$('#br').onclick=()=>route(0);hud();explore();
+</script></body></html>
